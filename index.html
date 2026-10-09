@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cloud Web App</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+        }
+
+        header {
+            background: #0759c7;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background: #12305a;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: white;
+        }
+
+        .hero h2 {
+            color: #0759c7;
+            font-size: 32px;
+        }
+
+        .hero button {
+            background: #0759c7;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        section {
+            text-align: center;
+            padding: 25px;
+        }
+
+        .card {
+            background: white;
+            margin: 15px auto;
+            padding: 20px;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #cbd5e1;
+        }
+
+        footer {
+            background: #12305a;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Cloud Web App</h1>
+        <p>MSBTE Cloud Computing Practical No. 5</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero" id="home">
+        <h2>Welcome to My Website!</h2>
+        <p>Learn how cloud technology hosts web applications.</p>
+        <button onclick="showMessage()">Get Started</button>
+        <p id="message"></p>
+    </div>
+
+    <section id="about">
+        <div class="card">
+            <h2>About Us</h2>
+            <p>This is a simple web application created using HTML, CSS and JavaScript.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="card">
+            <h2>Our Services</h2>
+            <p>Cloud Hosting</p>
+            <p>Web Application Development</p>
+            <p>Cloud Storage</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="card">
+            <h2>Contact</h2>
+            <p>Welcome to our Cloud Computing project.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>MSBTE Cloud Computing Practical No. 5</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").textContent =
+                "Welcome! Your web application is working.";
+        }
+    </script>
+</body>
+</html>
